@@ -42,6 +42,21 @@ class Transporte {
 
     } 
  }
+//instancia del primer objeto
+$bicicleta = new Bicicleta(2, 1);
+//ejecucion del metodo heredado de transporte 
+echo $bicicleta->getInfo();
+echo $bicicleta->getRuedas();
 
- 
+echo "<hr>";
+
+//instancia del segundo objeto, con el atributo adicional
+$auto = new Automovil(4, 4, 'Manual');
+// metodo heredado de transporte
+echo $auto->getInfo();
+// metodo de la clase automovil
+echo $auto-> getTransmision();
+
+
+
 
